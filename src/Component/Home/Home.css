@@ -1,0 +1,21 @@
+.listItem {
+  list-style: none;
+}
+.listItem > li a {
+  color: black;
+  text-decoration: none;
+}
+.heading {
+  text-align: center;
+  color: rgb(81, 155, 7);
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+}
+.corol {
+  margin: auto;
+  width: 86%;
+}
+.Bookstore {
+  margin: 10px 0px 10px 50px;
+}

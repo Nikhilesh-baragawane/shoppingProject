@@ -1,0 +1,17 @@
+.menu-Item {
+  line-height: 50px;
+  background-color: black;
+  font-weight: bold;
+
+  text-align: center;
+  /* margin:auto; */
+}
+.menu-Link {
+  display: inline;
+  font-size: 16px;
+  margin-right: 50px;
+}
+ul > li a {
+  color: #fff;
+  font-family: normal Tahoma, Geneva, sans-serif;
+}

@@ -1,0 +1,68 @@
+.main-footer {
+  background: #181818;
+  color: #b1b1b1;
+  padding-top: 30px;
+  position: relative;
+  bottom: -80px;
+  width: 100%;
+  height: 370px;
+  overflow: hidden;
+}
+.footer_term {
+  text-align: center;
+  font-size: 13px;
+}
+.list_item > div > ul > li a {
+  color: #b1b1b1;
+  list-style: none;
+  text-decoration: none;
+  font-size: 13px;
+}
+.footer_term > a {
+  text-decoration: none;
+}
+.trustpay > span {
+  margin-right: 7px;
+  margin-top: -40px;
+}
+.hh > h5 {
+  position: relative;
+  left: 214px;
+  top: -45px;
+}
+.hh > p {
+  position: relative;
+  left: 214px;
+  top: -55px;
+  font-size: 13px;
+}
+.icons > span > a {
+  margin-right: 12px;
+}
+.copyright > p {
+  float: right;
+  position: relative;
+  top: -155px;
+  font-size: 14px;
+}
+
+.copyright > ul > li {
+  display: inline-block;
+  position: relative;
+  left: 897px;
+  font-size: 14px;
+  top: -150px;
+}
+.copyright > ul > li > a {
+  text-decoration: none;
+  color: #b1b1b1;
+}
+.copyright > ul > li > a:hover {
+  color: #df7a7a;
+}
+
+.copyright ul li + li:before {
+  content: "|";
+  margin-left: 5px;
+  margin-right: 5px;
+}
