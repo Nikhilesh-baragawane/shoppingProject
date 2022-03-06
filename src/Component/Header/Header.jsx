@@ -10,7 +10,7 @@ function template() {
   return (
     <div className="header">
       <img src={logo} />
-      <span>
+      {/* <span>
         <input
           type="text"
           className="input "
@@ -22,9 +22,9 @@ function template() {
             className="icon_search"
           ></FontAwesomeIcon>
         </span>
-      </span>
-      <span className="nav_button">
-        <button type="button" onClick={this.showTable}>
+      </span> */}
+      <span>
+        <button className="login" type="button" onClick={this.showTable}>
           Login
         </button>
         {this.state.isToggleOn && (
@@ -37,7 +37,7 @@ function template() {
         )}
       </span>
       <span>
-        <button type="button" onClick={this.showTabl}>
+        <button type="button" className="signup" onClick={this.showTabl}>
           Signup
         </button>
         {this.state.isToggleO && (

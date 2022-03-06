@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import Posts from "../Posts/Posts";
+
 import "../Header/SignIn.css";
 
 function SignUp() {
@@ -10,7 +10,7 @@ function SignUp() {
 
   function handleLogin(e) {
     e.preventDefault();
-    let mail = window.localStorage.srtItem("mail");
+    let mail = window.localStorage.setItem("mail");
     let pass = window.localStorage.setItem("pass");
 
     if (!emaillog || !passwordlog) {

@@ -9,8 +9,12 @@ class Header extends React.Component {
     this.handleClose = this.handleClose.bind(this);
     this.showTabl = this.showTabl.bind(this);
     this.handleClos = this.handleClos.bind(this);
+    this.handleChange = this.handleChange.bind(this);
   }
 
+  handleChange(e) {
+    console.log(e.target.value);
+  }
   showTable(e) {
     e.preventDefault();
     this.setState(() => ({

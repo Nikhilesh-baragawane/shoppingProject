@@ -40,7 +40,11 @@ button {
   font-weight: 500;
   float: inline-end;
 }
-.nav_button > button {
-  margin-right: -65px;
+.login {
+  margin-right: -460px;
+  float: right;
+}
+.signup {
+  margin-right: -270px;
   float: right;
 }
