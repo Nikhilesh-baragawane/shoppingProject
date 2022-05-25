@@ -10,6 +10,7 @@ function template() {
   return (
     <div className="header">
       <img src={logo} />
+
       {/* <span>
         <input
           type="text"

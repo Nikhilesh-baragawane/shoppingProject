@@ -6,7 +6,7 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";
 function BookStore() {
   const [book, setBook] = useState([]);
   const [search, setSearch] = useState("");
-
+  const [price, setPrice] = useState(0);
   const getBooks = () => {
     axios
       .get("https://course-api.com/javascript-store-products")
@@ -17,6 +17,11 @@ function BookStore() {
       })
       .catch(() => {});
   };
+
+  const filterPrice = () => {
+    setPrice(1500);
+  };
+
   useEffect(() => getBooks(), []);
 
   return (
@@ -27,7 +32,7 @@ function BookStore() {
             type="text"
             className="input "
             placeholder="Search by Title, Author"
-            onChange={(event) => setSearch(event.target.value)}
+            onChange={(eve) => setSearch(eve.target.value)}
           />
           <span>
             <FontAwesomeIcon
@@ -35,6 +40,9 @@ function BookStore() {
               className="icon_search"
             ></FontAwesomeIcon>
           </span>
+          <button type="button" className="priceButton" onClick={filterPrice}>
+            Price above &#8377;1500
+          </button>
         </span>
       </div>
       <div>
@@ -48,7 +56,14 @@ function BookStore() {
               return item;
             }
           })
-          .map((item, i) => {
+          .filter((item) => {
+            if (price === 0) {
+              return item;
+            } else if (item.fields.price >= price) {
+              return item;
+            }
+          })
+          .map((item) => {
             return (
               <div className="card ">
                 <img

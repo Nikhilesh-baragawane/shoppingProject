@@ -45,3 +45,8 @@ input,
 input::-webkit-input-placeholder {
   font-size: 12px;
 }
+.priceButton{
+  color: white;
+    background-color: rgba(14, 13, 13, 0.884);
+    border-radius: 5px;
+}
